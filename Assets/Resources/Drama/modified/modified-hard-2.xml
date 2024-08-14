@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SceneNode>
+    <node idText="Chapter0_start">
+        <background pic="地下通道"/>
+        <dialogue name="【旁白】" pic="小N_發現了什麼">在參觀aaafdnowe的時候，你與小 N 在北科某個神祕角落發現了一條地下通道，勇敢的你們決定動身探索深不見底的洞窟。</dialogue>
+        <dialogue name="【通知】" pic="一支壞掉的手電筒">獲得一支普通的手電筒。</dialogue>
+        <next>Chapter0_doors</next>
+    </node>
+    <node idText="Chapter0_doors">
+        <background pic="粉黑兩扇門"/>
+        <dialogue name="【旁白】">小N打開手電筒，順著樓梯往下走，遇上了兩扇門。</dialogue>
+        <dialogue name="【旁白】">一扇是綴有蝴蝶結的粉色塑膠門，一扇是寫了幾個數學公式的黑色木門，請問你會選擇哪一扇門？</dialogue>
+        <choice>
+            <option next="Chapter0_black_door">黑色木門</option>
+            <option next="Chapter0_pink_door">粉色塑膠門</option>
+        </choice>
+    </node>
+    <node idText="Chapter0_black_door">
+        <background pic="黑門"/>
+        <dialogue name="【我】">看不懂公式，但感覺比較正經，選這扇好了！</dialogue>
+        <next>Chapter1-1_start</next>
+    </node>
+    <node idText="Chapter0_pink_door">
+        <background pic="粉門"/>
+        <dialogue name="【我】">哇賽，死亡芭比粉，門後一定有怪怪的東西，想看！</dialogue>
+        <next>Chapter1-2_start</next>
+    </node>
+    <node idText="Chapter1-1_start">
+        <background pic="黑色房間"/>
+        <dialogue name="【旁白】" pic="小N_似乎在對話">你選擇打開那扇黑色的門。裡面是暗色的房間，正中央擺了張書桌，上頭有本老舊的筆記本。</dialogue>
+        <dialogue name="【旁白】">你打開那本筆記本，發現裡面寫了字。</dialogue>
+        <dialogue name="【旁白】">此為奧本海默紀錄複本，請回答以下問題，方能繼續前行。</dialogue>
+        <dialogue name="【旁白】">下列何者不是 CPU 架構？</dialogue>
+        <choice>
+            <option next="Chapter1-1_wrong_answer">RISC-V</option>
+            <option next="Chapter1-1_wrong_answer">ARM</option>
+            <option next="Chapter1-1_wrong_answer">PowerPC</option>
+            <option next="Chapter1-1_correct_answer">PowerShell</option>
+        </choice>
+    </node>
+    <node idText="Chapter1-1_wrong_answer">
+        <dialogue name="【旁白】">紀錄複本發光並開始抖動，房間隱藏機關被啟動，核彈把你們炸飛了。</dialogue>
+        <next>GameoverScene</next>
+    </node>
+    <node idText="Chapter1-1_correct_answer">
+        <dialogue name="【旁白】">你答出了正確答案，紀錄複本自動闔上書頁，露出壓在封面下的兩枚硬幣。</dialogue>
+        <dialogue name="【通知】" pic="塑膠鐵製硬幣">獲得兩枚老舊的硬幣，一枚塑膠製，一枚鐵製。</dialogue>
+        <dialogue name="【旁白】">於是你與小 N 帶著兩枚硬幣繼續向下走。</dialogue>
+        <next>Chapter2-1_start</next>
+    </node>
+    <node idText="Chapter1-2_start">
+        <background pic="粉紅房間"/>
+        <dialogue name="【旁白】" pic="小N_似乎在對話">你選擇打開那扇顏色歡樂的門。裡面是粉色的房間，有一套符合室內風格的茶桌與茶具。</dialogue>
+        <dialogue name="【旁白】">突然有個女聲開口，嚇了你們一跳，一位行舉機械的芭比娃娃邀請你與小 N 來場茶會。</dialogue>
+        <dialogue name="【Barbie】" pic="芭比">你好，要不要和我一起喝茶呢？</dialogue>
+        <dialogue name="【小 N】">……（點頭）</dialogue>
+        <dialogue name="【Barbie】">太好了！你說你是來探險的？看在你陪我喝茶的份上，如果你能答對這道題目，我就讓一位得力助手跟著你吧！</dialogue>
+        <dialogue name="【Barbie】">下列何者不是 HTTP 請求方法之一？</dialogue>
+        <choice>
+            <option next="Chapter1-2_wrong_answer">PUT</option>
+            <option next="Chapter1-2_correct_answer">PLACE</option>
+            <option next="Chapter1-2_wrong_answer">PATCH</option>
+            <option next="Chapter1-2_wrong_answer">POST</option>
+        </choice>
+    </node>
+    <node idText="Chapter1-2_wrong_answer">
+        <dialogue name="【Barbie】">這麼簡單的題目都答不出來，還想來探險？好險沒有把我的助手交給你們。這裡太危險了，你們還是回去吧！</dialogue>
+        <dialogue name="【旁白】" pic="clean">你們決定不聽 Barbie 的話繼續前進，但中途你們遇上了滾落的巨石，沒有 Ken 能幫你們抬住，你們被壓扁了。</dialogue>
+        <next>GameoverScene</next>
+    </node>
+    <node idText="Chapter1-2_correct_answer">
+        <dialogue name="【Barbie】">恭喜你答對啦！</dialogue>
+        <dialogue name="【通知】" pic="大肌肌 Ken">獲得隊友—— Barbie 的男朋友，大肌肌 Ken。</dialogue>
+        <dialogue name="【旁白】" pic="clean">於是你與小 N 帶著塑膠製的猛男繼續向下走，或許你能嘗試摸摸他的腹肌。</dialogue>
+        <next>Chapter2-2_start</next>
+    </node>
+    <node idText="Chapter2-1_start">
+        <background pic="繼續前行"/>
+        <dialogue name="【旁白】">成功寫下奧本海默要的答案後，你與夥伴們前進，迎接你們的是綿長的階梯，你們小心翼翼的沿著階梯向下。</dialogue>
+        <next>Chapter2-1_lake</next>
+    </node>
+    <node idText="Chapter2-1_lake">
+        <background pic="湖"/>
+        <dialogue name="【旁白】">忽然前方傳來流水聲，你們看到一池水，旁邊立了告示牌「投幣式」。</dialogue>
+        <dialogue name="【旁白】">水很暗也很深，你們不敢貿然游過去，只好選擇一種硬幣投入。</dialogue>
+        <choice>
+            <option next="Chapter2-1_plastic_coin">投入塑膠硬幣</option>
+            <option next="Chapter2-1_iron_coin">投入鐵製硬幣</option>
+        </choice>
+    </node>
+    <node idText="Chapter2-1_plastic_coin">
+        <dialogue name="【通知】" pic="塑膠硬幣">你投入了塑膠硬幣。</dialogue>
+        <dialogue name="【旁白】">投入塑膠硬幣之後，水中忽然泛起了微小的波動，一位穿著華麗的女子浮出水面，看起來有些生氣。</dialogue>
+        <dialogue name="【女子】" pic="下水道女神_生氣">我是下水道女神，請不要亂丟垃圾！投幣也要投值錢的……咳咳，為了懲罰你們，你們必須答出我的問題。</dialogue>
+        <next>Chapter2-1_goddess_question</next>
+    </node>
+    <node idText="Chapter2-1_iron_coin">
+        <dialogue name="【通知】" pic="鐵製硬幣">你投入了鐵製硬幣。</dialogue>
+        <dialogue name="【旁白】">投入鐵製硬幣之後，水中忽然泛起了微小的波動，一位穿著華麗的女子浮出水面。</dialogue>
+        <dialogue name="【女子】" pic="下水道女神">我是下水道女神，請問你們丟的是這枚金硬幣，還是銀硬幣呢？</dialogue>
+        <choice>
+            <option next="Chapter2-1_goddess_question">金硬幣！</option>
+            <option next="Chapter2-1_goddess_question">銀硬幣！</option>
+            <option next="Chapter2-1_goddess_question">兩個硬幣都是我丟的！</option>
+            <option next="Chapter2-1_honest_answer">不是，我丟的是鐵製硬幣</option>
+        </choice>
+    </node>
+    <node idText="Chapter2-1_goddess_question">
+        <dialogue name="【下水道女神】" pic="下水道女神_生氣">就知道你們不誠實，我要懲罰你們，你們必須答出我的問題，若沒有回答正確，你們就必須幫我打掃整條下水道！</dialogue>
+        <next>Chapter2-1_question</next>
+    </node>
+    <node idText="Chapter2-1_honest_answer">
+        <dialogue name="【下水道女神】">真是誠實的好孩子，這樣吧，要是你們答出正確答案，我就將三枚硬幣都給你們！</dialogue>
+        <next>Chapter2-1_question</next>
+    </node>
+    <node idText="Chapter2-1_question">
+        <dialogue name="【下水道女神】">下列哪個產品的的吉祥物動物品種是正確的？</dialogue>
+        <choice>
+            <option next="Chapter2-1_wrong_answer">Docker: 海豚</option>
+            <option next="Chapter2-1_wrong_answer">Rust: 蠍子</option>
+            <option next="Chapter2-1_correct_answer">Linux: 企鵝</option>
+            <option next="Chapter2-1_wrong_answer">Go: 袋鼠</option>
+        </choice>
+    </node>
+    <node idText="Chapter2-1_wrong_answer">
+        <background pic="全黑"/>
+        <dialogue name="【旁白】" pic="clean">女神得到錯誤答案後，生氣的把你們丟進下水道。</dialogue>
+        <dialogue name="【旁白】">你們逃不出髒亂的下水道，並且生病死去了。</dialogue>
+        <next>GameoverScene</next>
+    </node>
+    <node idText="Chapter2-1_correct_answer">
+        <dialogue name="【旁白】" pic="clean">女神得到正確答案後，使水面浮出一道小橋，默默的離開了。</dialogue>
+        <next>Chapter3-1_start</next>
+    </node>
+
+    <node idText="Chapter2-2_start">
+        <background pic="繼續前行"/>
+        <dialogue name="【旁白】">與芭比道別後，你與夥伴們前進，迎接你們的是綿長的階梯，你們小心翼翼的沿著階梯向下。</dialogue>
+        <dialogue name="【旁白】">途中，Ken 踩到一包紅包，好奇的他彎身撿起，你們來不及阻止，便見紅包掉出一塊木頭。（註：路上遇到紅包請不要亂撿）</dialogue>
+        <next>Chapter2-2_start_cont</next>
+    </node>
+    <node idText="Chapter2-2_start_cont">
+        <background pic="全黑"/>
+        <dialogue name="【旁白】">四周頓時陰風陣陣，手電筒閃爍幾下就沒了電，你隱約聽到了哭聲。</dialogue>
+        <dialogue name="【某哭聲】" pic="皮諾丘">我是冤死的皮諾丘，你們必須幫我申冤嗚嗚嗚……</dialogue>
+        <dialogue name="【皮諾丘】">大家都知道，Google 的商標有六個字，四種顏色。那如果把兩種重複出現的顏色混在一起，會變成什麼顏色？</dialogue>
+        <choice>
+            <option next="Chapter2-2_correct_answer">紫色</option>
+            <option next="Chapter2-2_wrong_answer">綠色</option>
+            <option next="Chapter2-2_wrong_answer">橘色</option>
+            <option next="Chapter2-2_wrong_answer">青色</option>
+        </choice>
+    </node>
+    <node idText="Chapter2-2_correct_answer">
+        <background pic="clean"/>
+        <dialogue name="【旁白】" pic="clean">皮諾丘得知真相之後，送給你們 bonk 柴犬卡，並心滿意足的地離去了，手電筒也恢復正常，你們選擇繼續前行。</dialogue>
+        <dialogue name="【通知】" pic="bonk 柴犬">獲得一隻 bonk 柴犬卡。</dialogue>
+        <next>Chapter2-2_correct_answer_cont</next>
+    </node>
+    <node idText="Chapter2-2_correct_answer_cont">
+        <background pic="繼續前行"/>
+        <next>Chapter3-3_start</next>
+    </node>
+    <node idText="Chapter2-2_wrong_answer">
+        <background pic="clean"/>
+        <dialogue name="【皮諾丘】">怎麽會是這樣！我要毀了這個世界！！！</dialogue>
+        <dialogue name="【旁白】" pic="clean">皮諾丘把這個世界給毀了。</dialogue>
+        <next>GameoverScene</next>
+    </node>
+
+    <node idText="Chapter3-1_start">
+        <background pic="繼續前行"/>
+        <dialogue name="【旁白】">離開下水道女神的區域後，你與夥伴們前進，迎接你們的依然是長長的階梯。</dialogue>
+        <next>Chapter3-1_door</next>
+    </node>
+    <node idText="Chapter3-1_door">
+        <background pic="普通的門"/>
+        <dialogue name="【旁白】">沿著階梯往下走沒多久，可以見到一扇普通的房門，這次門沒上鎖，你們勇敢地打開了門。</dialogue>
+        <next>Chapter3-1_room</next>
+    </node>
+    <node idText="Chapter3-1_room">
+        <background pic="普通房間"/>
+        <dialogue name="【修女】">你們來的正好，自從我聽了那條魚的事蹟，就天天睡不著，你們能幫我尋找安眠藥嗎？</dialogue>
+        <next>Chapter3-1_treasure_room</next>
+    </node>
+    <node idText="Chapter3-1_treasure_room">
+        <background pic="寶箱房間"/>
+        <dialogue name="【旁白】">你們決定幫修女尋找安眠藥，結果在房屋裡看到一個上鎖的箱子。</dialogue>
+        <dialogue name="【旁白】">箱子上的指引表示必須回答箱子上的問題，才能打開它，據修女所知，只有一個箱子說的是真話。</dialogue>
+        <dialogue name="【旁白】">下列何者是 Android 版本中沒有使用的代號？</dialogue>
+        <choice>
+            <option next="Chapter3-1_correct_answer">Macaron（馬卡龍）</option>
+            <option next="Chapter3-1_wrong_answer">Cupcake（杯子蛋糕）</option>
+            <option next="Chapter3-1_wrong_answer">Ice Cream Sandwich（冰淇淋三明治）</option>
+            <option next="Chapter3-1_wrong_answer">Oreo</option>
+        </choice>
+    </node>
+
+    <node idText="Chapter3-1_correct_answer">
+        <dialogue name="【旁白】">箱子打開後，果然是修女要找的安眠藥，她非常感謝你們，決定送你們一條魚——或許不是傳說中的那條。</dialogue>
+        <dialogue name="【通知】" pic="一條會旋轉的魚">獲得一條會旋轉的魚。</dialogue>
+        <dialogue name="【旁白】">與修女道別之後，你們選擇繼續前進。</dialogue>
+        <next>Boss1_start</next>
+    </node>
+    <node idText="Chapter3-1_wrong_answer">
+        <dialogue name="【旁白】">箱子打開後是滿滿的食人魚，你們被咬得體無完膚。修女笑了一聲便離開了。</dialogue>
+        <next>GameoverScene</next>
+    </node>
+    <node idText="Chapter3-2_start">
+        <background pic="繼續前行"/>
+        <dialogue name="【旁白】">離開下水道女神的區域後，你與夥伴們前進，迎接你們的依然是長長的階梯。</dialogue>
+        <next>Chapter3-2_door</next>
+    </node>
+    <node idText="Chapter3-2_door">
+        <background pic="普通的門"/>
+        <dialogue name="【旁白】">沿著階梯往下走沒多久，可以見到一扇普通房門，這次門沒上鎖，你們勇敢地打開了門。</dialogue>
+        <next>Chapter3-2_room</next>
+    </node>
+    <node idText="Chapter3-2_room">
+        <background pic="普通房間"/>
+        <dialogue name="【阿偉】">來的正好，可以幫我找阿罵藏起來的一百塊嗎？我想偷偷拿去跟彬彬打遊戲。</dialogue>
+        <next>Chapter3-2_treasure_room</next>
+    </node>
+    <node idText="Chapter3-2_treasure_room">
+        <background pic="寶箱房間"/>
+        <dialogue name="【旁白】">你們決定幫阿偉尋找一百元，結果在房屋裡看到一個上鎖的箱子，必須回答箱子上的問題，才能打開它。</dialogue>
+        <dialogue name="【旁白】">你和阿罵在 GitHub 協作網頁前端專案，阿罵因為打錯字後悔做了 git push --force，現在你落後一個提交，但也超前一個提交。</dialogue>
+        <dialogue name="【旁白】">請問這時候該打什麼指令才能更新成阿罵修好的版本？（假設專案用 GitHub，預設設定）。</dialogue>
+        <choice>
+            <option next="Chapter3-2_wrong_answer">git push --force</option>
+            <option next="Chapter3-2_wrong_answer">git pull</option>
+            <option next="Chapter3-2_wrong_answer">git commit -m "切掉阿罵的手"</option>
+            <option next="Chapter3-2_correct_answer">git reset origin/main</option>
+        </choice>
+    </node>
+
+    <node idText="Chapter3-2_wrong_answer">
+        <background pic="普通房間"/>
+        <dialogue name="【旁白】">打開箱子發現阿罵躲在裡面，阿偉默默地溜走了。</dialogue>
+        <dialogue name="【阿偉的阿罵】">你毀了我的專案！</dialogue>
+        <dialogue name="【旁白】">生氣的阿罵把你們叫去房間讀書一輩子。</dialogue>
+        <next>GameoverScene</next>
+    </node>
+    <node idText="Chapter3-2_correct_answer">
+        <background pic="普通房間"/>
+        <dialogue name="【旁白】">箱子打開後，果然是阿偉要找的一百元，他非常高興地替你們開了門，自己則跑去找彬彬了。</dialogue>
+        <dialogue name="【通知】" pic="阿偉的阿罵">獲得阿偉的阿罵。</dialogue>
+        <dialogue name="【旁白】">與阿偉道別之後，你們選擇繼續前進。</dialogue>
+        <next>Boss2_start</next>
+    </node>
+    <node idText="Chapter3-3_start">
+        <background pic="繼續前行"/>
+        <dialogue name="【旁白】">得到一隻奇怪柴犬之後，你與夥伴們前進，迎接你們的依然是長長的階梯。</dialogue>
+        <next>Chapter3-3_start_2</next>
+    </node>
+    <node idText="Chapter3-3_start_2">
+        <background pic="普通的門"/>
+        <dialogue name="【旁白】">沿著階梯往下走沒多久，可以見到一扇普通房門，這次門沒上鎖，你們勇敢地打開了門。</dialogue>
+        <next>Chapter3-3_start_3</next>
+    </node>
+    <node idText="Chapter3-3_start_3">
+        <background pic="普通房間"/>
+        <dialogue name="【雹哥】" pic="雹哥">我是爆哥的頭號粉絲雹哥，你們有看到我的咖哩拌飯嗎？我還沒吃，它就大叫一聲跑掉了。</dialogue>
+        <next>Chapter3-3_start_4</next>
+    </node>
+    <node idText="Chapter3-3_start_4">
+        <background pic="寶箱房間"/>
+        <dialogue name="【旁白】">你們決定幫他尋找咖哩拌飯，結果在房屋裡看到一個上鎖的箱子，必須回答箱子上的問題，才能打開它。</dialogue>
+        <dialogue name="【旁白】">台灣男性平均身高約 173 公分。設一個男性身高 height，怎麽在 Python正確的判斷一位男性高不高？（註：選項塞不下空格請見諒）</dialogue>
+        <choice>
+            <option next="Chapter3-3_wrong_answer">is_tall=height>=173?true:false</option>
+            <option next="Chapter3-3_correct_answer">is_tall=True if height>=173 else False</option>
+            <option next="Chapter3-3_wrong_answer">is_tall=true if height>=173 else false</option>
+            <option next="Chapter3-3_wrong_answer">is_tall=height is 173</option>
+        </choice>
+    </node>
+    <node idText="Chapter3-3_wrong_answer">
+        <background pic="寶箱房間"/>
+        <dialogue name="【旁白】">箱子鎖的死死的，一動也不動。</dialogue>
+        <dialogue name="【旁白】">身高 169 的雹哥傷心地大聲尖叫，你們的身體承受不住而被震暈了。</dialogue>
+        <next>GameoverScene</next>
+    </node>
+    <node idText="Chapter3-3_correct_answer">
+        <background pic="寶箱房間"/>
+        <dialogue name="【旁白】">箱子打開後，果然是雹哥的咖哩拌飯，他非常感謝你們，決定將咖哩拌飯送給你們。</dialogue>
+        <dialogue name="【通知】" pic="會尖叫的咖哩拌飯">獲得會叫的咖哩拌飯。</dialogue>
+        <dialogue name="【旁白】">與雹哥道別之後，你們選擇繼續前進。</dialogue>
+        <next>Boss3_start</next>
+    </node>
+    <node idText="Boss1_start">
+        <background pic="繼續前行"/>
+        <dialogue name="【旁白】" pic="小N_打boss">樓梯越走越陰森，你與小 N 正想往回走。</dialogue>
+        <next>Boss1_start_2</next>
+    </node>
+    <node idText="Boss1_start_2">
+        <background pic="全黑"/>
+        <dialogue name="【旁白】">忽然手電筒啪一聲斷了電，四周狂風大作，忽然有個人出現在你們面前，正是佛地魔。</dialogue>
+        <dialogue name="【BOSS 出現】" pic="佛地魔">佛地魔出現了 ！</dialogue>
+        <dialogue name="【通知】">可使用道具</dialogue>
+        <choice>
+            <option next="Boss1_flashlight">一支壞掉的手電筒</option>
+            <option next="Boss1_bonk_dog">bonk 柴犬</option>
+            <option next="Boss1_rotating_fish">一條會旋轉的魚</option>
+            <option next="Boss1_plastic_coin">塑膠硬幣</option>
+            <option next="Boss1_iron_coin">鐵製硬幣</option>
+        </choice>
+    </node>
+    <node idText="Boss2_start">
+        <background pic="繼續前行"/>
+        <dialogue name="【旁白】" pic="小N_打boss">樓梯越走越陰森，你與小 N 正想往回走。</dialogue>
+        <next>Boss2_start_2</next>
+    </node>
+    <node idText="Boss2_start_2">
+        <background pic="全黑"/>
+        <dialogue name="【旁白】">忽然手電筒啪一聲斷了電，四周狂風大作，忽然有個人出現在你們面前，正是傑哥。</dialogue>
+        <dialogue name="【BOSS 出現】" pic="傑哥">傑哥出現了 ！</dialogue>
+        <dialogue name="【通知】">可使用道具</dialogue>
+        <choice>
+            <option next="Boss2_flashlight">一支壞掉的手電筒</option>
+            <option next="Boss2_grandma">阿偉的阿罵</option>
+            <option next="Boss2_three_coins">三枚硬幣</option>
+            <option next="Boss2_iron_coin">鐵製硬幣</option>
+            <option next="Boss2_plastic_coin">塑膠硬幣</option>
+            <option next="Boss2_bonk_dog">bonk 柴犬</option>
+        </choice>
+    </node>
+    <node idText="Boss3_start">
+        <background pic="繼續前行"/>
+        <dialogue name="【旁白】" pic="小N_打boss">樓梯越走越陰森，你與小 N 正想往回走。</dialogue>
+        <next>Boss3_start_2</next>
+    </node>
+    <node idText="Boss3_start_2">
+        <background pic="全黑"/>
+        <dialogue name="【旁白】">忽然手電筒啪一聲斷了電，四周狂風大作，忽然有個人出現在你們面前，正是武藏與小次郎。</dialogue>
+        <dialogue name="【BOSS 出現】" pic="武藏與小次郎">武藏與小次郎出現了 ！</dialogue>
+        <dialogue name="【通知】">可使用道具</dialogue>
+        <choice>
+            <option next="Boss3_flashlight">一支壞掉的手電筒</option>
+            <option next="Boss3_ken">大肌肌 Ken</option>
+            <option next="Boss3_bonk_dog">bonk 柴犬</option>
+            <option next="Boss3_curry_rice">會尖叫的咖哩拌飯</option>
+        </choice>
+    </node>
+    <node idText="End1">
+        <background pic="全黑"/>
+        <dialogue name="【旁白】">你們成功打敗了佛地魔，旋轉的魚造成了不可逆轉的傷害，他尖叫一聲消散於無。</dialogue>
+        <dialogue name="【旁白】">前方出現一扇門，你們迫不急待地打開它。</dialogue>
+        <next>End1_2</next>
+    </node>
+    <node idText="End1_2">
+        <background pic="宿舍"/>
+        <dialogue name="【旁白】">一道光閃過，耳邊傳來鬧鐘聲，你倏然張開眼，發現自己在宿舍床上，手機提示你再過十分鐘就是早八。</dialogue>
+        <dialogue name="【旁白】">你急忙沖出宿舍，再無暇去想那荒唐夢境。</dialogue>
+        <dialogue name="【成就】">獲得結局「【極度困難版】 結局一」</dialogue>
+        <achievement>【極度困難版】 結局一</achievement>
+        <next>GameEndScene</next>
+    </node>
+    <node idText="End2">
+        <background pic="全黑"/>
+        <dialogue name="【旁白】">你們成功打敗了傑哥，阿偉的阿罵造成了不可逆轉的傷害，他尖叫一聲消散於無。</dialogue>
+        <dialogue name="【旁白】">前方出現一扇門，你們迫不急待地打開它。</dialogue>
+        <next>End2</next>
+    </node>
+    <node idText="End2_2">
+        <background pic="宿舍"/>
+        <dialogue name="【旁白】">一道光閃過，耳邊傳來鬧鐘聲，你倏然張開眼，發現自己在宿舍床上，手機提示你再過十分鐘就是早八。</dialogue>
+        <dialogue name="【旁白】">你急忙沖出宿舍，再無暇去想那荒唐夢境。</dialogue>
+        <dialogue name="【成就】">獲得結局「【極度困難版】 結局二」</dialogue>
+        <achievement>【極度困難版】 結局二</achievement>
+        <next>GameEndScene</next>
+    </node>
+    <node idText="End3">
+        <background pic="全黑"/>
+        <dialogue name="【旁白】">你們成功打敗了對方，大肌肌 Ken 與咖哩拌飯造成了不可逆轉的傷害，武藏與小次郎尖叫一聲消散於無。</dialogue>
+        <dialogue name="【旁白】">前方出現一扇門，你們迫不急待地打開它。</dialogue>
+        <next>End3_2</next>
+    </node>
+    <node idText="End3_2">
+        <background pic="宿舍"/>
+        <dialogue name="【旁白】">一道光閃過，耳邊傳來鬧鐘聲，你倏然張開眼，發現自己在宿舍床上，手機提示你再過十分鐘就是早八。</dialogue>
+        <dialogue name="【旁白】">你急忙沖出宿舍，再無暇去想那荒唐夢境。</dialogue>
+        <dialogue name="【成就】">獲得結局「【極度困難版】 結局三」</dialogue>
+        <achievement>【極度困難版】 結局三</achievement>
+        <next>GameEndScene</next>
+    </node>
+    <node idText="GameEndScene">
+        <choice>
+            <option next="Home">回到首頁</option>
+            <option next="QuitConfirm">離開遊戲</option>
+        </choice>
+    </node>
+    <node idText="QuitConfirm">
+        <dialogue name="【旁白】">確定要離開遊戲？將不會保存任何遊戲進度與成就。</dialogue>
+        <choice>
+            <option next="Home">回到首頁</option>
+            <option next="Quit">離開遊戲</option>
+        </choice>
+    </node>
+    <node idText="GameoverScene">
+        <background pic="全黑"/>
+        <dialogue name="【旁白】">Game Over</dialogue>
+        <dialogue name="【旁白】">你死了。</dialogue>
+        <choice>
+            <option next="Restart">重新開始</option>
+            <option next="Home">回到首頁</option>
+        </choice>
+    </node>
+</SceneNode>
