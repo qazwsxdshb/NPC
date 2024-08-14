@@ -270,7 +270,7 @@
 
 
     <node idText="Chapter3-1_start">
-        <background pic=""/>
+        <background pic="地下通道"/>
         <dialogue name="【旁白】">拿到了這本書之後，旁邊出現了一個通回台北科技大學的指標，你和小Ｎ走了進去</dialogue>
         <dialogue name="【旁白】">沿著階梯往下走沒多久，可以見到一扇普通的房門，這次門沒上鎖，你們勇敢地打開了門</dialogue>
         <dialogue name="【修女】" pic="修女">你們來的正好，自從我聽了那條魚的事蹟，就天天睡不著，你們能幫我尋找安眠藥嗎？</dialogue>
@@ -298,9 +298,8 @@
     <!-- </bug> -->
 
     <node idText="Chapter3-2_start">
-        <background pic=""/>
-        <dialogue name="【旁白】">拿到了這本書之後，旁邊出現了一個通回台北科技大學的指標，你和小Ｎ走了進去</dialogue>
         <background pic="地下通道"/>
+        <dialogue name="【旁白】">拿到了這本書之後，旁邊出現了一個通回台北科技大學的指標，你和小Ｎ走了進去</dialogue>
         <dialogue name="【旁白】">沿著階梯往下走沒多久，可以見到一扇普通的房門，這次門沒上鎖，你們勇敢地打開了門</dialogue>
         <dialogue name="【阿偉】">來的正好，可以幫我找奶奶藏起來的一百塊嗎？我想偷偷拿去跟彬彬打遊戲。不要跟我奶奶說喔！我再送你們一個小禮物</dialogue>
         <dialogue name="【旁白】">你願意幫阿偉開箱找錢嗎？</dialogue>
@@ -333,9 +332,8 @@
     <!-- </bug> -->
 
     <node idText="Chapter3-3_start">
-        <background pic=""/>
-        <dialogue name="【旁白】" pic="皮諾丘3">得到一隻戀愛腦的皮諾丘之後，你與夥伴們前進，迎接你們的變成了長長的階梯</dialogue>
         <background pic="地下通道"/>
+        <dialogue name="【旁白】" pic="皮諾丘3">得到一隻戀愛腦的皮諾丘之後，你與夥伴們前進，迎接你們的變成了長長的階梯</dialogue>
         <dialogue name="【旁白】">沿著階梯往下走沒多久，可以見到一扇普通房門，這次門沒上鎖，你們勇敢地打開了門</dialogue>
         <dialogue name="【雹哥】" pic="雹哥">我是爆哥的頭號粉絲雹哥，你們有看到我的咖哩拌飯嗎？我還沒吃，它就大叫一聲跑掉了</dialogue>
         <dialogue name="【旁白】">你們決定幫他尋找咖哩拌飯，結果在房屋裡看到一個上鎖的箱子，必須回答箱子上的問題，才能打開它</dialogue>
