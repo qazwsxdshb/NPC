@@ -97,7 +97,7 @@
         <dialogue name="">（水把火滅了）</dialogue>
         <dialogue name="【旁白】" pic="小N_似乎在對話">水泥碎裂，一切都沒發生，小Ｎ變回了原狀</dialogue>
 <!-- <ok> -->
-        <dialogue name="【通知】" pic="">獲得水泥碎片</dialogue>
+        <dialogue name="【通知】" pic="水泥碎片">獲得水泥碎片</dialogue>
         <dialogue name="【尼斯湖水怪】" pic="尼斯湖水怪1">好啦看在你那麼機智的份上，我就暫時放了你們兩個吧！</dialogue>
         <next>Chapter2-2_start</next>
     </node>
@@ -142,15 +142,15 @@
         <dialogue name="【旁白】">池塘邊有個石頭，上面放著一本怪怪的書 你要閱讀嗎?</dialogue>
         <dialogue name="">要（接續下文）</dialogue>
         <background pic="颱風撞山"/>
-        <dialogue name="【書】" pic="">凱米颱風生成才三天</dialogue>
-        <dialogue name="【書】" pic="">就要往我們台灣筆直衝刺</dialogue>
-        <dialogue name="【書】" pic="">就為了騎在台灣那粗大的中央山脈上</dialogue>
-        <dialogue name="【書】" pic="">我已經預想到了</dialogue>
+        <dialogue name="【書】" pic="書">凱米颱風生成才三天</dialogue>
+        <dialogue name="【書】" pic="書">就要往我們台灣筆直衝刺</dialogue>
+        <dialogue name="【書】" pic="書">就為了騎在台灣那粗大的中央山脈上</dialogue>
+        <dialogue name="【書】" pic="書">我已經預想到了</dialogue>
         <dialogue name="【凱米】">雜魚❤️雜魚❤️就憑這個雜魚山脈也想要阻止我嗎?</dialogue>
         <dialogue name="【中央山脈】">少瞧不起人了，我只是還沒有使出全力！</dialogue>
         <dialogue name="【凱米】">少嘴硬了❤️來吧來吧，快點ㄆㄧㄩ❤️ㄆㄧㄩ❤️的土石流吧❤️</dialogue>
-        <dialogue name="【書】">此時經過了台灣最高峰——玉山</dialogue>
-        <dialogue name="【書】">請問玉山多高?</dialogue>
+        <dialogue name="【書】" pic="書">此時經過了台灣最高峰——玉山</dialogue>
+        <dialogue name="【書】" pic="書">請問玉山多高?</dialogue>
         <choice>
             <option next="Chapter2-1_wrong">3952 km</option>
             <option next="Chapter2-1-1_start">3952 m</option>
@@ -180,24 +180,21 @@
         <next>Chapter3-1_start</next>
     </node>
 
-
-
-
     <node idText="Chapter2-2_start">
         <background pic="池塘"/>
         <dialogue name="【旁白】">脫離了尼斯湖水怪之後，你轉身來到了一個池塘</dialogue>
         <dialogue name="【旁白】">池塘邊有個石頭，上面放著一本怪怪的書 你要閱讀嗎?</dialogue>
         <dialogue name="">要（接續下文）</dialogue>
         <background pic="颱風撞山"/>
-        <dialogue name="【書】" pic="">凱米颱風生成才三天</dialogue>
-        <dialogue name="【書】" pic="">就要往我們台灣筆直衝刺</dialogue>
-        <dialogue name="【書】" pic="">就為了騎在台灣那粗大的中央山脈上</dialogue>
-        <dialogue name="【書】" pic="">我已經預想到了</dialogue>
+        <dialogue name="【書】" pic="書">凱米颱風生成才三天</dialogue>
+        <dialogue name="【書】" pic="書">就要往我們台灣筆直衝刺</dialogue>
+        <dialogue name="【書】" pic="書">就為了騎在台灣那粗大的中央山脈上</dialogue>
+        <dialogue name="【書】" pic="書">我已經預想到了</dialogue>
         <dialogue name="【凱米】">雜魚❤️雜魚❤️就憑這個雜魚山脈也想要阻止我嗎?</dialogue>
         <dialogue name="【中央山脈】">少瞧不起人了，我只是還沒有使出全力！</dialogue>
         <dialogue name="【凱米】">少嘴硬了❤️來吧來吧，快點ㄆㄧㄩ❤️ㄆㄧㄩ❤️的土石流吧❤️</dialogue>
-        <dialogue name="">此時經過了台灣最高峰——玉山</dialogue>
-        <dialogue name="">請問玉山多高?</dialogue>
+        <dialogue name="" pic="書">此時經過了台灣最高峰——玉山</dialogue>
+        <dialogue name="" pic="書">請問玉山多高?</dialogue>
         <choice>
             <option next="Chapter2-2_wrong">3952 km</option>
             <option next="Chapter2-2-1_start">3952 m</option>
